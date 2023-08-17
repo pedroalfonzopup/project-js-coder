@@ -1,0 +1,55 @@
+[
+    {
+    "id": 1,
+    "nombre": "Alien vs Predator - Extinction", 
+    "precio": 20, 
+    "consola":"Sony",
+    "imagen": "./img/gameAlien.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 2, 
+    "nombre": "Resident Evil - Outbreak", 
+    "precio": 30,
+    "consola":"Sony",
+    "imagen": "./img/gameResident.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 3, 
+    "nombre": "Splatoon 3", 
+    "precio": 60, 
+    "consola":"Nintendo",
+    "imagen": "./img/gameSplatoon.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 4, 
+    "nombre": "The Legend of Zelda", 
+    "precio": 70, 
+    "consola":"Nintendo",
+    "imagen": "./img/gameZelda.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 5, 
+    "nombre": "Sonic The Game", 
+    "precio": 50, 
+    "consola":"Sega",
+    "imagen": "./img/gameSonic.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 6, 
+    "nombre": "Street Fighter", 
+    "precio": 10, 
+    "consola":"Sega",
+    "imagen": "./img/gameStreet.jpg",
+    "cantidad": 0
+    }
+]

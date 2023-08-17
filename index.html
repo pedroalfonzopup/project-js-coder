@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-Dictator</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <navbar class="navbar">
+            <div class="navbar--icon">
+                <img src="./img/gameLoveIcon.png" alt="Icono de la página">
+            </div>
+            <div class="navbar--carrito">
+                <button type="button" class="btn bg-transparent" data-toggle="modal" data-target="#carritoModal">
+                    <i class="fa-3x fas fa-shopping-cart" style="color:rgb(212, 205, 205)"></i>
+                </button>
+            </div>
+        </navbar>
+    </header>
+
+
+
+    <main class="main container">
+        <div id="contenedorProductos" class="products">
+        </div>
+
+        <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div id="divCarrito" class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button id="borrarCarrito" type="button" class="btn btn-secondary">Borrar Todo</button>
+                  <button id="terminarCompra" type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+
+        <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+          <i class="fa-3x fab fa-twitter" style="color:rgb(212, 205, 205)"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+          <i class="fa-3x fab fa-facebook-square" style="color:rgb(212, 205, 205)"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+          <i class="fa-3x fab fa-instagram" style="color:rgb(212, 205, 205)"></i>
+        </a>
+        
+        <h1></h1>
+        
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

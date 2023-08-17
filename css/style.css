@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.modal {
+  background: linear-gradient(1deg, black 0%, #001c64 100%);
+  
+}
+.modal-content {
+  color: azure;
+  background-color: #03002a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  background-color: black;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Courier New', Courier, monospace; }
+  .body a {
+    color: white;
+    text-decoration: none; }
+    .body a:hover {
+      text-decoration: none;
+      color: white; }
+
+.header, .footer {
+  background: #03002a;
+  background: linear-gradient(1deg, black 0%, #001c64 100%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 10px;
+}
+
+.navbar--icon {
+  width: 60px;
+}
+
+.navbar--icon img {
+  width: 100%;
+}
+
+.navbar--carrito {
+  width: 60px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+}
+
+
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.videojuegos--tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: rgb(37, 65, 189);
+  width: 250px;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px;
+}
+
+.divCarrito {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.carrito--boton__borrar {
+  background-color:rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.carrito--boton {
+  margin: 0 auto;
+  width: 45px;
+
+
+  background-color:rgba(255, 255, 255, 0);
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.close {
+  color: azure;
+}
+
+.close:hover {
+  color: azure;
+}
+
+.valorTotal {
+  text-align: center;
+}
+
+.videojuegos--tarjetas__carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: rgb(37, 65, 189);
+  padding: 20px;
+  margin: 30px;
+
+  text-align: center;
+}
+
+
+.videojuegos--tarjetas h4 {
+  text-align: center;
+
+  font-size: 15px;
+  font-family: monospace;
+  color: azure;
+
+  font-weight: 800;
+}
+
+.videojuegos--contenedorImagen {
+  width: 150px;
+}
+
+.videojuegos--contenedorImagen img {
+  width: 100%;
+}
+
+.videojuegos--boton {
+  margin: 0 auto;
+  width: 45px;
+
+
+  background-color:rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.videojuegos--boton__carrito {
+  background-color:rgba(255, 255, 255, 0);
+  border: none;
+}
+
+
+.videojuegos--boton:hover {
+  cursor: pointer;
+}
+
+.videojuegos--boton i {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+
+  padding: 10px;
+}
