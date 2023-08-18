@@ -7,13 +7,11 @@ const botonEliminarCarrito = document.querySelector("#borrarCarrito")
 const divCarrito = document.getElementById("divCarrito")
 const botonTerminarCompra = document.querySelector("#terminarCompra")
 
-const renderCarrito = () => {
+const renderCarrito = (array) => {
     divCarrito.innerHTML= ""
-
-    const carritoStorage = JSON.parse(localStorage.getItem("carrito"))
-    const total = sacarTotal(carritoStorage)
-
-    for (let element of carritoStorage) {
+    const total = sacarTotal(array)
+    console.log(array)
+    for (let element of array) {
         const cardProducto = document.createElement("div")
         cardProducto.classList.add("videojuegos--tarjetas__carrito")
 
@@ -33,15 +31,12 @@ const renderCarrito = () => {
         const borrarProducto = document.createElement("button")
         borrarProducto.classList.add("carrito--boton__borrar")
         borrarProducto.addEventListener("click", () => {
-            let productoABorrar = carritoCompras.indexOf(element)
-            carritoCompras.splice(productoABorrar - 1 , 1)
-
+            let indice = array.indexOf(element)
+            array.splice(indice, 1);
             localStorage.removeItem("carrito");
-            localStorage.setItem("carrito", JSON.stringify(carritoCompras));
-            const carritoStorage = JSON.parse(localStorage.getItem("carrito"))
-            
+            localStorage.setItem("carrito", JSON.stringify(array));
 
-            renderCarrito()
+            renderCarrito(carritoCompras)
         })
         borrarProducto.innerHTML= `
         <button id="borrar${element.id}" class="carrito--boton"><i class="fa-2x fas fa-trash-alt" style="color: #ff0000;" alt="Icono Basura"> </i>
@@ -93,7 +88,6 @@ const renderProductos = (array) => {
 
             localStorage.removeItem("carrito");
             localStorage.setItem("carrito", JSON.stringify(carritoCompras));
-            const carritoStorage = JSON.parse(localStorage.getItem("carrito"))
             Toastify({
                 text: "¡Se ha añadido al carrito con exito!",
                 duration: 2000,
@@ -105,7 +99,7 @@ const renderProductos = (array) => {
                     },
             }).showToast();
 
-            renderCarrito()
+            renderCarrito(carritoCompras)
         })
         buttonComprar.innerHTML= `
         <button id="btn${element.id}" class="videojuegos--boton"><i class="fa-2x fas fa-cart-plus" alt="Icono Carrito"></i>
@@ -130,20 +124,15 @@ async function traerDatos() {
     const productos = await respuesta.json()
 
     renderProductos(productos)
-    renderCarrito()
+    if(localStorage.getItem("carrito"))
+        renderCarrito()
+
 }
 
 
 
 traerDatos()
 
-
-
-const agregarAlCarrito = (number) => {
-    let juego = productos[number - 1]
-    console.log(juego)
-    carritoCompras.push(juego)
-}
 
 const sacarTotal = (array) => {
     if (array) {
@@ -182,6 +171,11 @@ const terminarCompra = () => {
                 },
         }).showToast();
     } else {
+        const carritoStorage = JSON.parse(localStorage.getItem("carrito"))
+        const total = sacarTotal(carritoStorage)
+        const objetoTotal = {total: total}
+        carritoStorage.push(objetoTotal)
+        console.log(carritoStorage)
         divCarrito.innerHTML= ""
         carritoCompras = []
         localStorage.removeItem("carrito");
@@ -204,22 +198,6 @@ const terminarCompra = () => {
 botonTerminarCompra.addEventListener("click", () => {
     terminarCompra()
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
