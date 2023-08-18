@@ -51,5 +51,59 @@
     "consola":"Sega",
     "imagen": "./img/gameStreet.jpg",
     "cantidad": 0
+    },
+
+    {
+    "id": 7, 
+    "nombre": "Doom Classic", 
+    "precio": 5, 
+    "consola":"PC",
+    "imagen": "./img/gameDoom.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 8, 
+    "nombre": "Dota", 
+    "precio": 20, 
+    "consola":"PC",
+    "imagen": "./img/gameDota.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 9, 
+    "nombre": "Jurassic Park - Operation Genesis", 
+    "precio": 15, 
+    "consola":"Sony",
+    "imagen": "./img/gameGenesis.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 10, 
+    "nombre": "Halo 2", 
+    "precio": 65, 
+    "consola":"Xbox",
+    "imagen": "./img/gameHalo2.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 11, 
+    "nombre": "Left for Dead", 
+    "precio": 10, 
+    "consola":"Sega",
+    "imagen": "./img/gameLeft.jpg",
+    "cantidad": 0
+    },
+
+    {
+    "id": 12, 
+    "nombre": "Metroid", 
+    "precio": 10, 
+    "consola":"Sega",
+    "imagen": "./img/gameMetroid.jpg",
+    "cantidad": 0
     }
 ]
